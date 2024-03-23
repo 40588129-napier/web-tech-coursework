@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         let split = url.split("/");
         split.pop();
         url = split.join('/') + "/posts/" + search + ".html";
-        urlExists(url)
+        cosurlExists(url)
         //window.location.assign(url);
     }
 
@@ -17,11 +17,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
 })
 
 function urlExists(url){
+    let result = false;
     const client = new XMLHttpRequest();
     client.open("GET", url);
     client.send();
 
     client.onreadystatechange = (e) => {
-        console.log(client.status)
+        if(client.status == 200){
+            result = true;
+        }
     }
+    return result;
 }
