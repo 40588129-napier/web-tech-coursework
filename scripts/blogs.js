@@ -23,12 +23,14 @@ function urlExists(url){
     client.send();
 
     client.onreadystatechange = (e) => {
-        if (client.readyState === 4){
+        if(client.readyState === 4){
             console.log(client.status == 200)
             if(client.status == 200){
-                result = true;
+                return true;
+            }
+            else{
+                return false;
             }
         }
     }
-    return result;
 }
