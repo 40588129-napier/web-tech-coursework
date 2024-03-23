@@ -1,3 +1,5 @@
+const client = new XMLHttpRequest();
+let ready = 0;
 window.addEventListener("DOMContentLoaded", (event) => {
     let form = document.getElementById("article_search");
 
@@ -16,21 +18,19 @@ window.addEventListener("DOMContentLoaded", (event) => {
     form.addEventListener('submit', submitForm);
 })
 
+client.onreadystatechange = (e) => {
+    ready = client.readyState;
+}
+
 function urlExists(url){
     let result = false;
-    const client = new XMLHttpRequest();
     client.open("GET", url);
     client.send();
-
-    client.onreadystatechange = (e) => {
-        if(client.readyState === 4){
-            console.log(client.status == 200)
-            if(client.status == 200){
-                return true;
-            }
-            else{
-                return false;
-            }
-        }
+    while(client.readyState !== 4){
+        console.log("awaiting request")
     }
+    if(client.status === 200){
+        result = true;
+    }
+    return result;
 }
