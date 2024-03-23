@@ -1,0 +1,68 @@
+/* Landing Page Styles */
+body {
+    background-image: linear-gradient(rgba(45, 49, 54, 0.5), rgba(45, 49, 54, 0.5) ), url(../img/background.avif);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;  
+}
+
+#landing_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+button {
+    background-color: #2D3136;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 12px;
+}
+
+/* Styling provided Google Translate element */
+
+div#google_translate_element select {
+    background-color: #2D3136;
+    color: white;
+    font-size: 14px;
+}
+
+div#google_translate_element div.goog-te-gadget a{
+    visibility: hidden;
+}
+
+div#google_translate_element div.goog-te-gadget{
+    color: transparent;
+}
+
+/* Featured Articles Styles */
+
+#featured_articles {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.featured_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.featured_row img {
+    max-width: 30vw;
+}
+
+figcaption {
+    background-color: #2D3136;
+    color: white;
+    text-align: center;
+    opacity: 0.9;
+    max-width: 30vw;
+}

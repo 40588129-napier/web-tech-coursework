@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <script src="./scripts/index.js"></script>
+        <title>GO!</title>
+    </head>
+    <body>
+        <header>
+            <img src="./img/logo_letters.png" alt="Go logo, just letters" id="logo_letters">
+            <nav>
+                <ul class="navigation_options">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./blogs.html">Blogs</a></li>
+                    <li><a href="./flight_check.html">Flight Checker</a></li>
+                    <li><a href="./cost_track.html">Cost Tracker</a></li>
+                    <li><a href="./itinerary_plan.html">Your Itinerary</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="landing_page">
+                <img src="./img/logo.png" alt="Go logo" id="logo">
+                <div id="google_translate_element"></div>
+                <script type="text/javascript" src="./scripts/translate_init.js"></script>
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                <button id="series_button" onclick="scrollToFeatured()">View our latest series</button>
+            </section>
+            <section id="featured_articles">
+                <h1>Latest Series</h1>
+                <div class="featured_row">
+                    <article class="featured_article">
+                        <figure>
+                            <img src="./img/petra.jpeg" alt="Image of Petra, Jordan" class="featured_article_image">
+                            <figcaption>Petra, Jordan</figcaption>
+                        </figure>
+                    </article>
+                    <article class="featured_article">
+                        <figure>
+                            <img src="./img/machu_picchu.jpeg" alt="Image of Machu Picchu, Peru" class="featured_article_image">
+                            <figcaption>Machu Picchu, Peru</figcaption>
+                        </figure>
+                    </article>
+                    <article class="featured_article">
+                        <figure>
+                            <img src="./img/taj_mahal.jpeg" alt="Image of Taj Mahal, India" class="featured_article_image">
+                            <figcaption>Taj Mahal, India</figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="featured_row">
+                    <article class="featured_article">
+                        <figure>
+                            <img src="./img/collosseum.jpeg" alt="Image of the Collosseum, Italy" class="featured_article_image">
+                            <figcaption>Collosseum, Italy</figcaption>
+                        </figure>
+                    </article>
+                    <article class="featured_article">
+                        <figure>
+                            <img src="./img/great_wall_of_china.jpeg" alt="Image of Great Wall of China, China" class="featured_article_image">
+                            <figcaption>Great Wall of China, China</figcaption>
+                        </figure>
+                    </article>
+                    <article class="featured_article">
+                        <figure>
+                            <img src="./img/chichen_itza.jpeg" alt="Image of Chichen Itza, Mexico" class="featured_article_image">
+                            <figcaption>Petra, Jordan</figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

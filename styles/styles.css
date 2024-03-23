@@ -1,0 +1,62 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto'!important;
+}
+
+h1 {
+    font-size: 50px;
+    color: #03A8E8;
+    text-align: center;
+}
+
+a:link { 
+    text-decoration: none; 
+} 
+
+a:visited { 
+    text-decoration: none; 
+}
+
+a:hover { 
+    text-decoration: none; 
+} 
+
+a:active { 
+    text-decoration: none; 
+}
+
+/* Navbar Styles */
+
+header {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background-color: #2D3136;
+    opacity: 0.9;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo_letters {
+    height: 70%;
+}
+
+.navigation_options {
+    list-style: none;
+}
+
+.navigation_options li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navigation_options a {
+    color: white;
+}
+
+.navigation_options a:hover {
+    color: #03A8E8;
+}
