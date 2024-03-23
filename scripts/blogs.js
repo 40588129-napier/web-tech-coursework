@@ -23,6 +23,7 @@ function urlExists(url){
     client.send();
 
     client.onreadystatechange = (e) => {
+        console.log(client.status)
         if(client.status === 200){
             result = true;
         }
