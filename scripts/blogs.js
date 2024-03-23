@@ -24,7 +24,8 @@ function urlExists(url){
 
     client.onreadystatechange = (e) => {
         if (client.readyState === 4){
-            if(client.status === 200){
+            console.log(client.status == 200)
+            if(client.status == 200){
                 result = true;
             }
         }
