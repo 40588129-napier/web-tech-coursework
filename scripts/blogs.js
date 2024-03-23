@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         let split = url.split("/");
         split.pop();
         url = split.join('/') + "/posts/" + search + ".html";
-        cosurlExists(url)
+        console.log(urlExists(url));
         //window.location.assign(url);
     }
 
