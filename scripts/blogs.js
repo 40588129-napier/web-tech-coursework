@@ -12,14 +12,12 @@ function submitForm(e){
     split.pop();
     url = split.join('/') + "/posts/" + search + ".html";
     let exists = false;
-    urlExists(url).then((result) => {
+    urlExists(url).then((exists) => {
         console.log(result)
-        exists = result;
+        if(exists){
+            window.location.assign(url);
+        }   
     })
-    console.log(exists)
-    if(exists){
-        window.location.assign(url);
-    }   
 }
 
 function urlExists(url){
