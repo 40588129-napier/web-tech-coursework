@@ -13,8 +13,10 @@ function submitForm(e){
     url = split.join('/') + "/posts/" + search + ".html";
     let exists = false;
     urlExists(url).then((result) => {
+        console.log(result)
         exists = result;
     })
+    console.log(exists)
     if(exists){
         window.location.assign(url);
     }   
