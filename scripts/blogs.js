@@ -11,13 +11,18 @@ function submitForm(e){
     let split = url.split("/");
     split.pop();
     url = split.join('/') + "/posts/" + search + ".html";
-    let exists = false;
-    urlExists(url).then((exists) => {
-        console.log(exists)
-        if(exists){
-            window.location.assign(url);
-        }   
-    })
+    if(url.includes("https://")){
+        let exists = false;
+        urlExists(url).then((exists) => {
+            console.log(exists)
+            if(exists){
+                window.location.assign(url);
+            }   
+        })
+    }
+    else{
+        window.location.assign(url);
+    }
 }
 
 function urlExists(url){
