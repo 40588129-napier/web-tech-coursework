@@ -2,6 +2,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/blogs.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
         <script src="./scripts/blogs.js"></script>
         <title>GO!</title>
     </head>
@@ -18,12 +20,79 @@
                 </ul>
             </nav>
         </header>
-        <section id="blogs">
+        <section id="blog_search">
             <h1>Blogs</h1>
-            <form id="article_search">
-                <input type="text" placeholder="Search Article" name="search">
-                <button type="submit">Search</button>
-            </form>
+            <br>
+            <section id="search_box">
+                <form id="search_form">
+                    <input id="search_input" placeholder="Search Article" name="search" autocomplete="off">
+                    <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288a144 144 0 1 0 0 288"/></svg></button>
+                </form>
+            </section>
+            <div id="recommended_search"></div>
+        </section>
+        <section id="article_list">
+            <a href="./posts/petra.html">
+                <article class="article_entry">
+                    <figure class="article_thumbnail">
+                        <img src="./img/petra.jpeg">
+                    </figure>
+                    <article class="article_summary">
+                        <h4>Petra, Jordan</h4>
+                        <p class="p2 bold">Series:</p>
+                        <p class="p2">Wonders of the World</p>
+                        <br>
+                        <p class="p2 bold">Description:</p>
+                        <p class="p2">The ruins of a historic city, carved into rock, nestled within mountains and canyons, that was once home to over 30,000 people. There is a lot more to explore than the famous treasury, with 5 miles of structures to explore. </p>
+                    </article>
+                </article>
+            </a>
+            <a href="./posts/chichen_itza.html">
+                <article class="article_entry">
+                    <figure class="article_thumbnail">
+                        <img src="img/chichen_itza.jpeg">
+                    </figure>
+                    <article class="article_summary">
+                        <h4>Chichen Itza, Mexico</h4>
+                        <p class="p2 bold">Series:</p>
+                        <p class="p2">Wonders of the World</p>
+                        <br>
+                        <p class="p2 bold">Description:</p>
+                        <p class="p2">An ancient Mayan city whose unique design and architecture provide an insight into the civilisation by which it was built. It is most known for the impressive Kulkulkan Pyramid at the centre of the site.</p>
+                    </article>
+                </article>
+            </a>
+            <a href="./posts/machu_picchu.html">
+                <article class="article_entry">
+                    <figure class="article_thumbnail">
+                        <img src="./img/machu_picchu.jpeg">
+                    </figure>
+                    <article class="article_summary">
+                        <h4>Machu Picchu, Peru</h4>
+                        <p class="p2 bold">Series:</p>
+                        <p class="p2">Wonders of the World</p>
+                        <br>
+                        <p class="p2 bold">Description:</p>
+                        <p class="p2">An Inca citadel situated high-up in the Andes Mountains of Peru. The site highlights the incredible construction and engineering skills of the Incan people, evidenced by its impressive preservation.</p>
+                    </article>
+                    </article>
+                </article>
+            </a>
+            <a href="./posts/taj_mahal.html">
+                <article class="article_entry">
+                    <figure class="article_thumbnail">
+                        <img src="./img/taj_mahal.jpeg">
+                    </figure>
+                    <article class="article_summary">
+                        <h4>Taj Mahal, India</h4>
+                        <p class="p2 bold">Series:</p>
+                        <p class="p2">Wonders of the World</p>
+                        <br>
+                        <p class="p2 bold">Description:</p>
+                        <p class="p2">This eye-catching marble mausoleum was built in the memory of the wife of a Mughal Emperor. One of the best and most famous examples of Mughal architecture and a must-visit when in Agra.</p>
+                    </article>
+                </article>
+            </a>
         </section>
     </body>
 </html>

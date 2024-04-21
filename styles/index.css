@@ -21,7 +21,12 @@ button {
     text-align: center;
     font-size: 14px;
     border-radius: 12px;
+    cursor: pointer;
 }
+
+button:hover { 
+    background-color: #03A8E8;
+} 
 
 /* Styling provided Google Translate element */
 
@@ -31,11 +36,11 @@ div#google_translate_element select {
     font-size: 14px;
 }
 
-div#google_translate_element div.goog-te-gadget a{
+div#google_translate_element div.goog-te-gadget a {
     visibility: hidden;
 }
 
-div#google_translate_element div.goog-te-gadget{
+div#google_translate_element div.goog-te-gadget {
     color: transparent;
 }
 
@@ -66,3 +71,8 @@ figcaption {
     opacity: 0.9;
     max-width: 30vw;
 }
+
+.featured_article:hover figcaption {
+    background-color: #03A8E8;
+}
+
