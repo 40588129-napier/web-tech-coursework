@@ -43,7 +43,7 @@
     font-size: 14px;
 }
 
-#search_form ::placeholder {
+#search_form::placeholder {
     color: #2D3136;
 }
 

@@ -1,0 +1,98 @@
+/*Search Feature*/
+#add_itinerary {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#itinerary_box {
+    width: 20vw; 
+    border-radius: 5px;
+}
+
+#itinerary_form {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    align-items: center;
+    background-color: #2D3136;
+}
+
+#itinerary_form input {
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    color: white;
+}
+
+#itinerary_form button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+}
+
+#itinerary_form button:hover {
+    color: #03A8E8;
+    font-size: 14px;
+}
+
+#itinerary_form::placeholder {
+    color: #2D3136;
+}
+
+#itinerary_display {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#itinerary_table {
+    border-collapse: collapse;
+    min-width: 40vw;
+    outline: solid 1px black;
+    text-align: center;
+    background-color: #2D3136;
+    border-collapse:separate;
+    border-spacing: 10px 20px;
+    font-size: 14px;
+}
+
+#itinerary_table tbody {
+    background-color: #2D3136;
+}
+
+#itinerary_table tbody tr {
+    height: 50px;
+}
+
+.itinerary_id {
+    visibility: hidden;
+    width: 0px;
+}
+
+.itinerary_details {
+    background-color: #03A8E8;
+    width: 70%;
+}
+
+.itinerary_remove {
+    width: 20%;
+}
+
+.itinerary_remove button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: #03A8E8;;
+}
+
